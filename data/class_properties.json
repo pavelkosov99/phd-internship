@@ -1,0 +1,21 @@
+{
+    "hasShape": {
+        "VerticalLine": [
+            "One",
+            "Four",
+            "Five",
+            "Seven"
+        ],
+        "HorizontalLine": [
+            "Four",
+            "Five",
+            "Seven"
+        ],
+        "Circle": [
+            "Zero",
+            "Six",
+            "Eight",
+            "Nine"
+        ]
+    }
+}

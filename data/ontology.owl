@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/ontology"
+         xmlns="http://example.org/ontology#">
+
+<owl:Ontology rdf:about="http://example.org/ontology"/>
+
+<owl:ObjectProperty rdf:about="#VisualProperty"/>
+
+<owl:ObjectProperty rdf:about="#hasShape">
+  <rdfs:domain rdf:resource="#Digit"/>
+  <rdfs:range rdf:resource="#Property"/>
+  <rdfs:subPropertyOf rdf:resource="#VisualProperty"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Digit">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Property">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#VerticalLine">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#HorizontalLine">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Circle">
+  <rdfs:subClassOf rdf:resource="#Property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Zero">
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:onClass rdf:resource="#Circle"/>
+          <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        </owl:Restriction>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+</owl:Class>
+
+<owl:Class rdf:about="#One">
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:onClass rdf:resource="#VerticalLine"/>
+          <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        </owl:Restriction>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#Circle"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Two">
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Three">
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Four">
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:onClass rdf:resource="#VerticalLine"/>
+          <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:onClass rdf:resource="#HorizontalLine"/>
+          <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+        </owl:Restriction>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#Circle"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Five">
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#Circle"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Six">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:onClass rdf:resource="#Circle"/>
+      <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Seven">
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:onClass rdf:resource="#VerticalLine"/>
+          <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#Circle"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Eight">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:onClass rdf:resource="#Circle"/>
+      <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Nine">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:onClass rdf:resource="#Circle"/>
+      <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+</owl:Class>
+
+
+</rdf:RDF>
