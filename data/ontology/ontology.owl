@@ -1,0 +1,3008 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://example.org/ontology"
+         xmlns="http://example.org/ontology#">
+
+<owl:Ontology rdf:about="http://example.org/ontology"/>
+
+<owl:ObjectProperty rdf:about="#VisualProperty"/>
+
+<owl:ObjectProperty rdf:about="#hasShape">
+  <rdfs:subPropertyOf rdf:resource="#VisualProperty"/>
+  <rdfs:domain rdf:resource="#Digit"/>
+  <rdfs:range rdf:resource="#Shape"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Digit">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Shape">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#VerticalLine">
+  <rdfs:subClassOf rdf:resource="#Shape"/>
+</owl:Class>
+
+<owl:Class rdf:about="#HorizontalLine">
+  <rdfs:subClassOf rdf:resource="#Shape"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Circle">
+  <rdfs:subClassOf rdf:resource="#Shape"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Zero">
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#One">
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#Circle"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#Two">
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#Circle"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#Three">
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#Circle"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#Four">
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#Circle"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#Five">
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#Circle"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#Six">
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#Seven">
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#Circle"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#Eight">
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#Nine">
+  <rdfs:subClassOf rdf:resource="#Digit"/>
+  <rdfs:subClassOf>
+    <owl:Class>
+      <owl:intersectionOf rdf:parseType="Collection">
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+        <owl:Class>
+          <owl:complementOf>
+            <owl:Restriction>
+              <owl:onProperty rdf:resource="#hasShape"/>
+              <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+            </owl:Restriction>
+          </owl:complementOf>
+        </owl:Class>
+      </owl:intersectionOf>
+    </owl:Class>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#Image_0">
+  <rdf:type rdf:resource="#Two"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_1">
+  <rdf:type rdf:resource="#Zero"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_2">
+  <rdf:type rdf:resource="#Nine"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_3">
+  <rdf:type rdf:resource="#Zero"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_4">
+  <rdf:type rdf:resource="#Three"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_5">
+  <rdf:type rdf:resource="#Seven"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_6">
+  <rdf:type rdf:resource="#Zero"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_7">
+  <rdf:type rdf:resource="#Three"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_8">
+  <rdf:type rdf:resource="#Zero"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_9">
+  <rdf:type rdf:resource="#Three"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_10">
+  <rdf:type rdf:resource="#Five"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_11">
+  <rdf:type rdf:resource="#Seven"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_12">
+  <rdf:type rdf:resource="#Four"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_13">
+  <rdf:type rdf:resource="#Zero"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_14">
+  <rdf:type rdf:resource="#Four"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_15">
+  <rdf:type rdf:resource="#Three"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_16">
+  <rdf:type rdf:resource="#Three"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_17">
+  <rdf:type rdf:resource="#One"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_18">
+  <rdf:type rdf:resource="#Nine"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_19">
+  <rdf:type rdf:resource="#Zero"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_20">
+  <rdf:type rdf:resource="#Nine"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_21">
+  <rdf:type rdf:resource="#One"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_22">
+  <rdf:type rdf:resource="#One"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_23">
+  <rdf:type rdf:resource="#Five"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_24">
+  <rdf:type rdf:resource="#Seven"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_25">
+  <rdf:type rdf:resource="#Four"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_26">
+  <rdf:type rdf:resource="#Two"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_28">
+  <rdf:type rdf:resource="#Four"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_29">
+  <rdf:type rdf:resource="#Seven"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_30">
+  <rdf:type rdf:resource="#Seven"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_32">
+  <rdf:type rdf:resource="#Four"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_33">
+  <rdf:type rdf:resource="#Two"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_34">
+  <rdf:type rdf:resource="#Six"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_35">
+  <rdf:type rdf:resource="#Two"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_36">
+  <rdf:type rdf:resource="#Five"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_37">
+  <rdf:type rdf:resource="#Five"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_38">
+  <rdf:type rdf:resource="#One"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_39">
+  <rdf:type rdf:resource="#Six"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_40">
+  <rdf:type rdf:resource="#Seven"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_41">
+  <rdf:type rdf:resource="#Seven"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_42">
+  <rdf:type rdf:resource="#Four"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_43">
+  <rdf:type rdf:resource="#Nine"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_44">
+  <rdf:type rdf:resource="#Eight"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_45">
+  <rdf:type rdf:resource="#Seven"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_46">
+  <rdf:type rdf:resource="#Eight"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_48">
+  <rdf:type rdf:resource="#Six"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_49">
+  <rdf:type rdf:resource="#Seven"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_50">
+  <rdf:type rdf:resource="#Six"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_51">
+  <rdf:type rdf:resource="#Eight"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_52">
+  <rdf:type rdf:resource="#Eight"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_53">
+  <rdf:type rdf:resource="#Three"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_54">
+  <rdf:type rdf:resource="#Eight"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_55">
+  <rdf:type rdf:resource="#Two"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_56">
+  <rdf:type rdf:resource="#One"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_57">
+  <rdf:type rdf:resource="#Two"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_59">
+  <rdf:type rdf:resource="#Zero"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_60">
+  <rdf:type rdf:resource="#Four"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_61">
+  <rdf:type rdf:resource="#One"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_62">
+  <rdf:type rdf:resource="#Seven"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_63">
+  <rdf:type rdf:resource="#Zero"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_64">
+  <rdf:type rdf:resource="#Zero"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_65">
+  <rdf:type rdf:resource="#Zero"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_66">
+  <rdf:type rdf:resource="#One"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_67">
+  <rdf:type rdf:resource="#Nine"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_68">
+  <rdf:type rdf:resource="#Zero"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_69">
+  <rdf:type rdf:resource="#One"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_70">
+  <rdf:type rdf:resource="#Six"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_72">
+  <rdf:type rdf:resource="#Eight"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_73">
+  <rdf:type rdf:resource="#Eight"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_74">
+  <rdf:type rdf:resource="#Two"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_75">
+  <rdf:type rdf:resource="#Eight"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_76">
+  <rdf:type rdf:resource="#Eight"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_77">
+  <rdf:type rdf:resource="#Nine"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_78">
+  <rdf:type rdf:resource="#Two"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_80">
+  <rdf:type rdf:resource="#Five"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_81">
+  <rdf:type rdf:resource="#Four"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_82">
+  <rdf:type rdf:resource="#One"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_83">
+  <rdf:type rdf:resource="#Zero"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_84">
+  <rdf:type rdf:resource="#Nine"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_85">
+  <rdf:type rdf:resource="#Two"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_86">
+  <rdf:type rdf:resource="#Four"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_88">
+  <rdf:type rdf:resource="#Six"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_89">
+  <rdf:type rdf:resource="#Seven"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_90">
+  <rdf:type rdf:resource="#Two"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_91">
+  <rdf:type rdf:resource="#Zero"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_92">
+  <rdf:type rdf:resource="#Six"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_93">
+  <rdf:type rdf:resource="#Six"/>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#Circle"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_94">
+  <rdf:type rdf:resource="#One"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_95">
+  <rdf:type rdf:resource="#Four"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_96">
+  <rdf:type rdf:resource="#Three"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_98">
+  <rdf:type rdf:resource="#Seven"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#Image_99">
+  <rdf:type rdf:resource="#Four"/>
+  <rdf:type>
+    <owl:Class>
+      <owl:complementOf>
+        <owl:Restriction>
+          <owl:onProperty rdf:resource="#hasShape"/>
+          <owl:someValuesFrom rdf:resource="#Circle"/>
+        </owl:Restriction>
+      </owl:complementOf>
+    </owl:Class>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#HorizontalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+  <rdf:type>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#hasShape"/>
+      <owl:someValuesFrom rdf:resource="#VerticalLine"/>
+    </owl:Restriction>
+  </rdf:type>
+</owl:NamedIndividual>
+
+
+</rdf:RDF>

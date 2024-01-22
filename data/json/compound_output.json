@@ -1,0 +1,621 @@
+{
+    "Image_0": {
+        "Digit": "Two",
+        "hasShape": [
+            "HorizontalLine"
+        ]
+    },
+    "Image_1": {
+        "Digit": "Zero",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_2": {
+        "Digit": "Nine",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_3": {
+        "Digit": "Zero",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_4": {
+        "Digit": "Three",
+        "hasShape": "No Properties"
+    },
+    "Image_5": {
+        "Digit": "Seven",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_6": {
+        "Digit": "Zero",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_7": {
+        "Digit": "Three",
+        "hasShape": "No Properties"
+    },
+    "Image_8": {
+        "Digit": "Zero",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_9": {
+        "Digit": "Three",
+        "hasShape": "No Properties"
+    },
+    "Image_10": {
+        "Digit": "Five",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_11": {
+        "Digit": "Seven",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_12": {
+        "Digit": "Four",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_13": {
+        "Digit": "Zero",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_14": {
+        "Digit": "Four",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_15": {
+        "Digit": "Three",
+        "hasShape": "No Properties"
+    },
+    "Image_16": {
+        "Digit": "Three",
+        "hasShape": "No Properties"
+    },
+    "Image_17": {
+        "Digit": "One",
+        "hasShape": [
+            "VerticalLine"
+        ]
+    },
+    "Image_18": {
+        "Digit": "Nine",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_19": {
+        "Digit": "Zero",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_20": {
+        "Digit": "Nine",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_21": {
+        "Digit": "One",
+        "hasShape": [
+            "VerticalLine"
+        ]
+    },
+    "Image_22": {
+        "Digit": "One",
+        "hasShape": [
+            "VerticalLine"
+        ]
+    },
+    "Image_23": {
+        "Digit": "Five",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_24": {
+        "Digit": "Seven",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_25": {
+        "Digit": "Four",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_26": {
+        "Digit": "Two",
+        "hasShape": [
+            "HorizontalLine"
+        ]
+    },
+    "Image_27": {
+        "Digit": "Seven",
+        "hasShape": [
+            "Circle",
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_28": {
+        "Digit": "Four",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_29": {
+        "Digit": "Seven",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_30": {
+        "Digit": "Seven",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_31": {
+        "Digit": "Eight",
+        "hasShape": [
+            "HorizontalLine"
+        ]
+    },
+    "Image_32": {
+        "Digit": "Four",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_33": {
+        "Digit": "Two",
+        "hasShape": [
+            "HorizontalLine"
+        ]
+    },
+    "Image_34": {
+        "Digit": "Six",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_35": {
+        "Digit": "Two",
+        "hasShape": [
+            "HorizontalLine"
+        ]
+    },
+    "Image_36": {
+        "Digit": "Five",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_37": {
+        "Digit": "Five",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_38": {
+        "Digit": "One",
+        "hasShape": [
+            "VerticalLine"
+        ]
+    },
+    "Image_39": {
+        "Digit": "Six",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_40": {
+        "Digit": "Seven",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_41": {
+        "Digit": "Seven",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_42": {
+        "Digit": "Four",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_43": {
+        "Digit": "Nine",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_44": {
+        "Digit": "Eight",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_45": {
+        "Digit": "Seven",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_46": {
+        "Digit": "Eight",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_47": {
+        "Digit": "Five",
+        "hasShape": [
+            "HorizontalLine"
+        ]
+    },
+    "Image_48": {
+        "Digit": "Six",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_49": {
+        "Digit": "Seven",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_50": {
+        "Digit": "Six",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_51": {
+        "Digit": "Eight",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_52": {
+        "Digit": "Eight",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_53": {
+        "Digit": "Three",
+        "hasShape": "No Properties"
+    },
+    "Image_54": {
+        "Digit": "Eight",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_55": {
+        "Digit": "Two",
+        "hasShape": [
+            "HorizontalLine"
+        ]
+    },
+    "Image_56": {
+        "Digit": "One",
+        "hasShape": [
+            "VerticalLine"
+        ]
+    },
+    "Image_57": {
+        "Digit": "Two",
+        "hasShape": [
+            "HorizontalLine"
+        ]
+    },
+    "Image_58": {
+        "Digit": "Two",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_59": {
+        "Digit": "Zero",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_60": {
+        "Digit": "Four",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_61": {
+        "Digit": "One",
+        "hasShape": [
+            "VerticalLine"
+        ]
+    },
+    "Image_62": {
+        "Digit": "Seven",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_63": {
+        "Digit": "Zero",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_64": {
+        "Digit": "Zero",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_65": {
+        "Digit": "Zero",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_66": {
+        "Digit": "One",
+        "hasShape": [
+            "VerticalLine"
+        ]
+    },
+    "Image_67": {
+        "Digit": "Nine",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_68": {
+        "Digit": "Zero",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_69": {
+        "Digit": "One",
+        "hasShape": [
+            "VerticalLine"
+        ]
+    },
+    "Image_70": {
+        "Digit": "Six",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_71": {
+        "Digit": "Two",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_72": {
+        "Digit": "Eight",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_73": {
+        "Digit": "Eight",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_74": {
+        "Digit": "Two",
+        "hasShape": [
+            "HorizontalLine"
+        ]
+    },
+    "Image_75": {
+        "Digit": "Eight",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_76": {
+        "Digit": "Eight",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_77": {
+        "Digit": "Nine",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_78": {
+        "Digit": "Two",
+        "hasShape": [
+            "HorizontalLine"
+        ]
+    },
+    "Image_79": {
+        "Digit": "Three",
+        "hasShape": [
+            "HorizontalLine"
+        ]
+    },
+    "Image_80": {
+        "Digit": "Five",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_81": {
+        "Digit": "Four",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_82": {
+        "Digit": "One",
+        "hasShape": [
+            "VerticalLine"
+        ]
+    },
+    "Image_83": {
+        "Digit": "Zero",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_84": {
+        "Digit": "Nine",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_85": {
+        "Digit": "Two",
+        "hasShape": [
+            "HorizontalLine"
+        ]
+    },
+    "Image_86": {
+        "Digit": "Four",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_87": {
+        "Digit": "Three",
+        "hasShape": [
+            "HorizontalLine"
+        ]
+    },
+    "Image_88": {
+        "Digit": "Six",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_89": {
+        "Digit": "Seven",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_90": {
+        "Digit": "Two",
+        "hasShape": [
+            "HorizontalLine"
+        ]
+    },
+    "Image_91": {
+        "Digit": "Zero",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_92": {
+        "Digit": "Six",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_93": {
+        "Digit": "Six",
+        "hasShape": [
+            "Circle"
+        ]
+    },
+    "Image_94": {
+        "Digit": "One",
+        "hasShape": [
+            "VerticalLine"
+        ]
+    },
+    "Image_95": {
+        "Digit": "Four",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_96": {
+        "Digit": "Three",
+        "hasShape": "No Properties"
+    },
+    "Image_97": {
+        "Digit": "Nine",
+        "hasShape": [
+            "Circle",
+            "HorizontalLine"
+        ]
+    },
+    "Image_98": {
+        "Digit": "Seven",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    },
+    "Image_99": {
+        "Digit": "Four",
+        "hasShape": [
+            "VerticalLine",
+            "HorizontalLine"
+        ]
+    }
+}

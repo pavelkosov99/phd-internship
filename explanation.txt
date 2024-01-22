@@ -1,0 +1,92 @@
+Image_0 is predicted as Two and has HorizontalLine, it does not have Circle and VerticalLine.Image_0 is consistent in the ontology.
+Image_1 is predicted as Zero and has Circle, it does not have HorizontalLine and VerticalLine.Image_1 is consistent in the ontology.
+Image_2 is predicted as Nine and has Circle, it does not have HorizontalLine and VerticalLine.Image_2 is consistent in the ontology.
+Image_3 is predicted as Zero and has Circle, it does not have HorizontalLine and VerticalLine.Image_3 is consistent in the ontology.
+Image_4 is predicted as Three and has no properties, it does not have Circle, HorizontalLine, VerticalLine.Image_4 is consistent in the ontology.
+Image_5 is predicted as Seven and has VerticalLine and HorizontalLine, it does not have Circle.Image_5 is consistent in the ontology.
+Image_6 is predicted as Zero and has Circle, it does not have HorizontalLine and VerticalLine.Image_6 is consistent in the ontology.
+Image_7 is predicted as Three and has no properties, it does not have Circle, HorizontalLine, VerticalLine.Image_7 is consistent in the ontology.
+Image_8 is predicted as Zero and has Circle, it does not have HorizontalLine and VerticalLine.Image_8 is consistent in the ontology.
+Image_9 is predicted as Three and has no properties, it does not have Circle, HorizontalLine, VerticalLine.Image_9 is consistent in the ontology.
+Image_10 is predicted as Five and has VerticalLine and HorizontalLine, it does not have Circle.Image_10 is consistent in the ontology.
+Image_11 is predicted as Seven and has VerticalLine and HorizontalLine, it does not have Circle.Image_11 is consistent in the ontology.
+Image_12 is predicted as Four and has VerticalLine and HorizontalLine, it does not have Circle.Image_12 is consistent in the ontology.
+Image_13 is predicted as Zero and has Circle, it does not have HorizontalLine and VerticalLine.Image_13 is consistent in the ontology.
+Image_14 is predicted as Four and has VerticalLine and HorizontalLine, it does not have Circle.Image_14 is consistent in the ontology.
+Image_15 is predicted as Three and has no properties, it does not have Circle, HorizontalLine, VerticalLine.Image_15 is consistent in the ontology.
+Image_16 is predicted as Three and has no properties, it does not have Circle, HorizontalLine, VerticalLine.Image_16 is consistent in the ontology.
+Image_17 is predicted as One and has VerticalLine, it does not have Circle and HorizontalLine.Image_17 is consistent in the ontology.
+Image_18 is predicted as Nine and has Circle, it does not have HorizontalLine and VerticalLine.Image_18 is consistent in the ontology.
+Image_19 is predicted as Zero and has Circle, it does not have HorizontalLine and VerticalLine.Image_19 is consistent in the ontology.
+Image_20 is predicted as Nine and has Circle, it does not have HorizontalLine and VerticalLine.Image_20 is consistent in the ontology.
+Image_21 is predicted as One and has VerticalLine, it does not have Circle and HorizontalLine.Image_21 is consistent in the ontology.
+Image_22 is predicted as One and has VerticalLine, it does not have Circle and HorizontalLine.Image_22 is consistent in the ontology.
+Image_23 is predicted as Five and has VerticalLine and HorizontalLine, it does not have Circle.Image_23 is consistent in the ontology.
+Image_24 is predicted as Seven and has VerticalLine and HorizontalLine, it does not have Circle.Image_24 is consistent in the ontology.
+Image_25 is predicted as Four and has VerticalLine and HorizontalLine, it does not have Circle.Image_25 is consistent in the ontology.
+Image_26 is predicted as Two and has HorizontalLine, it does not have Circle and VerticalLine.Image_26 is consistent in the ontology.
+Image_27 is NOT consistent and removed from the ontology.However, Image_27 was predicted as Seven and had Circle and VerticalLine and HorizontalLine, it did not have .Image_28 is predicted as Four and has VerticalLine and HorizontalLine, it does not have Circle.Image_28 is consistent in the ontology.
+Image_29 is predicted as Seven and has VerticalLine and HorizontalLine, it does not have Circle.Image_29 is consistent in the ontology.
+Image_30 is predicted as Seven and has VerticalLine and HorizontalLine, it does not have Circle.Image_30 is consistent in the ontology.
+Image_31 is NOT consistent and removed from the ontology.However, Image_31 was predicted as Eight and had HorizontalLine, it did not have Circle and VerticalLine.Image_32 is predicted as Four and has VerticalLine and HorizontalLine, it does not have Circle.Image_32 is consistent in the ontology.
+Image_33 is predicted as Two and has HorizontalLine, it does not have Circle and VerticalLine.Image_33 is consistent in the ontology.
+Image_34 is predicted as Six and has Circle, it does not have HorizontalLine and VerticalLine.Image_34 is consistent in the ontology.
+Image_35 is predicted as Two and has HorizontalLine, it does not have Circle and VerticalLine.Image_35 is consistent in the ontology.
+Image_36 is predicted as Five and has VerticalLine and HorizontalLine, it does not have Circle.Image_36 is consistent in the ontology.
+Image_37 is predicted as Five and has VerticalLine and HorizontalLine, it does not have Circle.Image_37 is consistent in the ontology.
+Image_38 is predicted as One and has VerticalLine, it does not have Circle and HorizontalLine.Image_38 is consistent in the ontology.
+Image_39 is predicted as Six and has Circle, it does not have HorizontalLine and VerticalLine.Image_39 is consistent in the ontology.
+Image_40 is predicted as Seven and has VerticalLine and HorizontalLine, it does not have Circle.Image_40 is consistent in the ontology.
+Image_41 is predicted as Seven and has VerticalLine and HorizontalLine, it does not have Circle.Image_41 is consistent in the ontology.
+Image_42 is predicted as Four and has VerticalLine and HorizontalLine, it does not have Circle.Image_42 is consistent in the ontology.
+Image_43 is predicted as Nine and has Circle, it does not have HorizontalLine and VerticalLine.Image_43 is consistent in the ontology.
+Image_44 is predicted as Eight and has Circle, it does not have HorizontalLine and VerticalLine.Image_44 is consistent in the ontology.
+Image_45 is predicted as Seven and has VerticalLine and HorizontalLine, it does not have Circle.Image_45 is consistent in the ontology.
+Image_46 is predicted as Eight and has Circle, it does not have HorizontalLine and VerticalLine.Image_46 is consistent in the ontology.
+Image_47 is NOT consistent and removed from the ontology.However, Image_47 was predicted as Five and had HorizontalLine, it did not have Circle and VerticalLine.Image_48 is predicted as Six and has Circle, it does not have HorizontalLine and VerticalLine.Image_48 is consistent in the ontology.
+Image_49 is predicted as Seven and has VerticalLine and HorizontalLine, it does not have Circle.Image_49 is consistent in the ontology.
+Image_50 is predicted as Six and has Circle, it does not have HorizontalLine and VerticalLine.Image_50 is consistent in the ontology.
+Image_51 is predicted as Eight and has Circle, it does not have HorizontalLine and VerticalLine.Image_51 is consistent in the ontology.
+Image_52 is predicted as Eight and has Circle, it does not have HorizontalLine and VerticalLine.Image_52 is consistent in the ontology.
+Image_53 is predicted as Three and has no properties, it does not have Circle, HorizontalLine, VerticalLine.Image_53 is consistent in the ontology.
+Image_54 is predicted as Eight and has Circle, it does not have HorizontalLine and VerticalLine.Image_54 is consistent in the ontology.
+Image_55 is predicted as Two and has HorizontalLine, it does not have Circle and VerticalLine.Image_55 is consistent in the ontology.
+Image_56 is predicted as One and has VerticalLine, it does not have Circle and HorizontalLine.Image_56 is consistent in the ontology.
+Image_57 is predicted as Two and has HorizontalLine, it does not have Circle and VerticalLine.Image_57 is consistent in the ontology.
+Image_58 is NOT consistent and removed from the ontology.However, Image_58 was predicted as Two and had VerticalLine and HorizontalLine, it did not have Circle.Image_59 is predicted as Zero and has Circle, it does not have HorizontalLine and VerticalLine.Image_59 is consistent in the ontology.
+Image_60 is predicted as Four and has VerticalLine and HorizontalLine, it does not have Circle.Image_60 is consistent in the ontology.
+Image_61 is predicted as One and has VerticalLine, it does not have Circle and HorizontalLine.Image_61 is consistent in the ontology.
+Image_62 is predicted as Seven and has VerticalLine and HorizontalLine, it does not have Circle.Image_62 is consistent in the ontology.
+Image_63 is predicted as Zero and has Circle, it does not have HorizontalLine and VerticalLine.Image_63 is consistent in the ontology.
+Image_64 is predicted as Zero and has Circle, it does not have HorizontalLine and VerticalLine.Image_64 is consistent in the ontology.
+Image_65 is predicted as Zero and has Circle, it does not have HorizontalLine and VerticalLine.Image_65 is consistent in the ontology.
+Image_66 is predicted as One and has VerticalLine, it does not have Circle and HorizontalLine.Image_66 is consistent in the ontology.
+Image_67 is predicted as Nine and has Circle, it does not have HorizontalLine and VerticalLine.Image_67 is consistent in the ontology.
+Image_68 is predicted as Zero and has Circle, it does not have HorizontalLine and VerticalLine.Image_68 is consistent in the ontology.
+Image_69 is predicted as One and has VerticalLine, it does not have Circle and HorizontalLine.Image_69 is consistent in the ontology.
+Image_70 is predicted as Six and has Circle, it does not have HorizontalLine and VerticalLine.Image_70 is consistent in the ontology.
+Image_71 is NOT consistent and removed from the ontology.However, Image_71 was predicted as Two and had VerticalLine and HorizontalLine, it did not have Circle.Image_72 is predicted as Eight and has Circle, it does not have HorizontalLine and VerticalLine.Image_72 is consistent in the ontology.
+Image_73 is predicted as Eight and has Circle, it does not have HorizontalLine and VerticalLine.Image_73 is consistent in the ontology.
+Image_74 is predicted as Two and has HorizontalLine, it does not have Circle and VerticalLine.Image_74 is consistent in the ontology.
+Image_75 is predicted as Eight and has Circle, it does not have HorizontalLine and VerticalLine.Image_75 is consistent in the ontology.
+Image_76 is predicted as Eight and has Circle, it does not have HorizontalLine and VerticalLine.Image_76 is consistent in the ontology.
+Image_77 is predicted as Nine and has Circle, it does not have HorizontalLine and VerticalLine.Image_77 is consistent in the ontology.
+Image_78 is predicted as Two and has HorizontalLine, it does not have Circle and VerticalLine.Image_78 is consistent in the ontology.
+Image_79 is NOT consistent and removed from the ontology.However, Image_79 was predicted as Three and had HorizontalLine, it did not have Circle and VerticalLine.Image_80 is predicted as Five and has VerticalLine and HorizontalLine, it does not have Circle.Image_80 is consistent in the ontology.
+Image_81 is predicted as Four and has VerticalLine and HorizontalLine, it does not have Circle.Image_81 is consistent in the ontology.
+Image_82 is predicted as One and has VerticalLine, it does not have Circle and HorizontalLine.Image_82 is consistent in the ontology.
+Image_83 is predicted as Zero and has Circle, it does not have HorizontalLine and VerticalLine.Image_83 is consistent in the ontology.
+Image_84 is predicted as Nine and has Circle, it does not have HorizontalLine and VerticalLine.Image_84 is consistent in the ontology.
+Image_85 is predicted as Two and has HorizontalLine, it does not have Circle and VerticalLine.Image_85 is consistent in the ontology.
+Image_86 is predicted as Four and has VerticalLine and HorizontalLine, it does not have Circle.Image_86 is consistent in the ontology.
+Image_87 is NOT consistent and removed from the ontology.However, Image_87 was predicted as Three and had HorizontalLine, it did not have Circle and VerticalLine.Image_88 is predicted as Six and has Circle, it does not have HorizontalLine and VerticalLine.Image_88 is consistent in the ontology.
+Image_89 is predicted as Seven and has VerticalLine and HorizontalLine, it does not have Circle.Image_89 is consistent in the ontology.
+Image_90 is predicted as Two and has HorizontalLine, it does not have Circle and VerticalLine.Image_90 is consistent in the ontology.
+Image_91 is predicted as Zero and has Circle, it does not have HorizontalLine and VerticalLine.Image_91 is consistent in the ontology.
+Image_92 is predicted as Six and has Circle, it does not have HorizontalLine and VerticalLine.Image_92 is consistent in the ontology.
+Image_93 is predicted as Six and has Circle, it does not have HorizontalLine and VerticalLine.Image_93 is consistent in the ontology.
+Image_94 is predicted as One and has VerticalLine, it does not have Circle and HorizontalLine.Image_94 is consistent in the ontology.
+Image_95 is predicted as Four and has VerticalLine and HorizontalLine, it does not have Circle.Image_95 is consistent in the ontology.
+Image_96 is predicted as Three and has no properties, it does not have Circle, HorizontalLine, VerticalLine.Image_96 is consistent in the ontology.
+Image_97 is NOT consistent and removed from the ontology.However, Image_97 was predicted as Nine and had Circle and HorizontalLine, it did not have VerticalLine.Image_98 is predicted as Seven and has VerticalLine and HorizontalLine, it does not have Circle.Image_98 is consistent in the ontology.
+Image_99 is predicted as Four and has VerticalLine and HorizontalLine, it does not have Circle.Image_99 is consistent in the ontology.

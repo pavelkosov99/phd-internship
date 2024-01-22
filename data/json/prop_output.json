@@ -1,0 +1,502 @@
+{
+    "Image_0": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": true
+    },
+    "Image_1": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_2": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_3": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_4": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_5": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_6": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_7": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_8": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_9": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_10": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_11": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_12": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_13": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_14": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_15": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_16": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_17": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": false
+    },
+    "Image_18": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_19": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_20": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_21": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": false
+    },
+    "Image_22": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": false
+    },
+    "Image_23": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_24": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_25": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_26": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": true
+    },
+    "Image_27": {
+        "Circle": true,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_28": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_29": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_30": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_31": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": true
+    },
+    "Image_32": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_33": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": true
+    },
+    "Image_34": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_35": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": true
+    },
+    "Image_36": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_37": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_38": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": false
+    },
+    "Image_39": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_40": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_41": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_42": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_43": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_44": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_45": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_46": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_47": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": true
+    },
+    "Image_48": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_49": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_50": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_51": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_52": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_53": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_54": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_55": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": true
+    },
+    "Image_56": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": false
+    },
+    "Image_57": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": true
+    },
+    "Image_58": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_59": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_60": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_61": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": false
+    },
+    "Image_62": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_63": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_64": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_65": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_66": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": false
+    },
+    "Image_67": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_68": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_69": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": false
+    },
+    "Image_70": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_71": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_72": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_73": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_74": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": true
+    },
+    "Image_75": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_76": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_77": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_78": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": true
+    },
+    "Image_79": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": true
+    },
+    "Image_80": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_81": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_82": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": false
+    },
+    "Image_83": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_84": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_85": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": true
+    },
+    "Image_86": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_87": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": true
+    },
+    "Image_88": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_89": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_90": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": true
+    },
+    "Image_91": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_92": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_93": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_94": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": false
+    },
+    "Image_95": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_96": {
+        "Circle": false,
+        "VerticalLine": false,
+        "HorizontalLine": false
+    },
+    "Image_97": {
+        "Circle": true,
+        "VerticalLine": false,
+        "HorizontalLine": true
+    },
+    "Image_98": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    },
+    "Image_99": {
+        "Circle": false,
+        "VerticalLine": true,
+        "HorizontalLine": true
+    }
+}
